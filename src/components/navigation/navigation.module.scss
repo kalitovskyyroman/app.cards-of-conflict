@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    justify-content: center;
+
+    .button {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        //margin-left: 0.5rem;
+        //margin-right: 0.5rem;
+    }
+}

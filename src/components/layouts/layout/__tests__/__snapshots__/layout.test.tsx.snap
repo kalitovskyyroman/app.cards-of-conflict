@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout component Render component 1`] = `
+<div>
+  <div
+    class="layout"
+  >
+    text
+  </div>
+</div>
+`;
