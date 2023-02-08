@@ -1,12 +1,13 @@
+import { FC } from 'react';
 import { TextField } from '@mui/material';
 
-import styles from './join-form.module.scss';
+import styles from './JoinGameForm.module.scss';
 
-const JoinForm = () => (
-    <div>
+const JoinGameForm: FC = () => (
+    <>
         <TextField className={styles.nickname} label="Нікнейм" variant="standard" fullWidth />
         <TextField label="ID Кімнати" variant="standard" fullWidth />
-    </div>
+    </>
 );
 
-export default JoinForm;
+export default JoinGameForm;

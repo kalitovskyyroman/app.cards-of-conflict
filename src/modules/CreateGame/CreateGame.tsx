@@ -1,17 +1,16 @@
 import { useRouter } from 'next/router';
-import Navigation from '../../../components/navigation/navigation';
-import JoinForm from '../join-form/join-form';
-import PagesEnum from '../../../enums/pages-enum';
+import { FC } from 'react';
+import CreateGameForm from './components/CreateGameForm/CreateGameForm';
+import { Navigation, PagesEnum } from '../../shared';
 
-import styles from './main-section.module.scss';
-
-const MainSection = () => {
+import styles from './CreateGame.module.scss';
+const CreateGame: FC = () => {
     const router = useRouter();
 
     return (
         <div>
             <div className={styles['form-container']}>
-                <JoinForm />
+                <CreateGameForm />
             </div>
             <Navigation
                 leftButton={{
@@ -21,7 +20,7 @@ const MainSection = () => {
                     },
                 }}
                 rightButton={{
-                    title: 'приєднатись',
+                    title: 'створити',
                     onClick: () => {
                         router.push(PagesEnum.Rick);
                     },
@@ -31,4 +30,4 @@ const MainSection = () => {
     );
 };
 
-export default MainSection;
+export default CreateGame;

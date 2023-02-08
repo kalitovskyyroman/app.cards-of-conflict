@@ -1,8 +1,8 @@
 import { ReactElement } from 'react';
-import MenuLayout from '../src/components/layouts/menu-layout/menu-layout';
-import MainSection from '../src/sections/create/main-section/main-section';
+import CreateGame from '../src/modules/CreateGame';
+import {IPageWithLayout, MenuLayout} from '../src/shared';
 
-const Create = () => <MainSection />;
+const Create: IPageWithLayout = () => <CreateGame />;
 
 Create.getLayout = function getLayout(page: ReactElement) {
     return <MenuLayout>{page}</MenuLayout>;

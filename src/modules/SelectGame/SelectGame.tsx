@@ -1,15 +1,15 @@
+import { FC } from 'react';
 import { useRouter } from 'next/router';
-import Title from './title/title';
-import Navigation from '../../../components/navigation/navigation';
-import PagesEnum from '../../../enums/pages-enum';
+import Title from './components/Title/Title';
+import { Navigation, PagesEnum } from '../../shared';
 
-import styles from './main-section.module.scss';
+import styles from './SelectGame.module.scss';
 
-const MainSection = () => {
+const SelectGame: FC = () => {
     const router = useRouter();
 
     return (
-        <>
+        <div>
             <div className={styles.title}>
                 <Title />
             </div>
@@ -27,8 +27,8 @@ const MainSection = () => {
                     },
                 }}
             />
-        </>
+        </div>
     );
 };
 
-export default MainSection;
+export default SelectGame;
