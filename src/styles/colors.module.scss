@@ -1,5 +1,13 @@
 $main: #333333;
+$chromatic-red: #ea372f;
+$soft-white: #ededed;
+$soft-black: #0a1520;
+$chromatic-blue: #76fbfd;
 
 :export {
     main: $main;
+    chromatic-red: $chromatic-red;
+    soft-white: $soft-white;
+    soft-black: $soft-black;
+    chromatic-blue: $chromatic-blue;
 }
