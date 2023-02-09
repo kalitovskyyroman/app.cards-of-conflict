@@ -10,15 +10,14 @@ const buttonStyles: OverridesStyleRules = {
         borderRadius: '30px',
         padding: '8px 24px',
         boxShadow: `
-            -7px 1px 1px 1px ${colors['chromatic-red']}, 
-            7px -1px 1px 1px ${colors['chromatic-blue']}
+            -5px 1px 1px 1px ${colors['chromatic-red']}, 
+            5px -1px 1px 1px ${colors['chromatic-blue']}
         `,
         ':hover': {
-            color: colors['soft-white'],
-            backgroundColor: colors['soft-black'],
+            backgroundColor: colors['soft-white'],
             boxShadow: `
-                7px -1px 1px 1px ${colors['chromatic-blue']},
-                -7px 1px 1px 1px ${colors['chromatic-red']}
+                -7px 1px 1px 1px ${colors['chromatic-red']},
+                7px -1px 1px 1px ${colors['chromatic-blue']}
             `,
         },
         ':focus': {
