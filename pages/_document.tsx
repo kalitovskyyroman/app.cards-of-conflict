@@ -11,6 +11,12 @@ export default class MyDocument extends Document {
                     {/* PWA primary color */}
                     <meta content={theme.palette.primary.main} name="theme-color" />
                     <link href="/favicon.ico" rel="shortcut icon" />
+                    <link href="https://fonts.googleapis.com" rel="preconnect" />
+                    <link href="https://fonts.gstatic.com" rel="preconnect" />
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+                        rel="stylesheet"
+                    />
                     <meta content="" name="emotion-insertion-point" />
                     {(this.props as any).emotionStyleTags}
                 </Head>
