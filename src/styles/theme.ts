@@ -22,19 +22,17 @@ const buttonStyles: OverridesStyleRules = {
             `,
         },
         ':focus': {
-            color: colors['soft-white'],
-            backgroundColor: colors['soft-black'],
             boxShadow: `
-                9px -1px 1px 1px ${colors['chromatic-blue']},
-                -9px 1px 1px 1px ${colors['chromatic-red']}
+                -9px 1px 1px 1px ${colors['chromatic-red']},
+                9px -1px 1px 1px ${colors['chromatic-blue']}
             `,
         },
         ':active': {
             color: colors['soft-white'],
             backgroundColor: colors['soft-black'],
             boxShadow: `
-                -9px 1px 1px 1px ${colors['chromatic-red']},
-                9px -1px 1px 1px ${colors['chromatic-blue']}
+                -9px 1px 1px 1px ${colors['chromatic-blue']},
+                9px -1px 1px 1px ${colors['chromatic-red']}
             `,
         }
     },
