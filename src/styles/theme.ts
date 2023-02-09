@@ -9,6 +9,7 @@ const buttonStyles: OverridesStyleRules = {
         backgroundColor: colors['soft-white'],
         borderRadius: '30px',
         padding: '8px 24px',
+        textTransform: 'lowercase',
         boxShadow: `
             -5px 1px 1px 1px ${colors['chromatic-red']}, 
             5px -1px 1px 1px ${colors['chromatic-blue']}
