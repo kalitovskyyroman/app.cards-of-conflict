@@ -25,16 +25,16 @@ const buttonStyles: OverridesStyleRules = {
             color: colors['soft-white'],
             backgroundColor: colors['soft-black'],
             boxShadow: `
-                5px -1px 1px 1px ${colors['chromatic-blue']},
-                -5px 1px 1px 1px ${colors['chromatic-red']}
+                9px -1px 1px 1px ${colors['chromatic-blue']},
+                -9px 1px 1px 1px ${colors['chromatic-red']}
             `,
         },
         ':active': {
             color: colors['soft-white'],
             backgroundColor: colors['soft-black'],
             boxShadow: `
-                -5px 1px 1px 1px ${colors['chromatic-red']},
-                5px -1px 1px 1px ${colors['chromatic-blue']}
+                -9px 1px 1px 1px ${colors['chromatic-red']},
+                9px -1px 1px 1px ${colors['chromatic-blue']}
             `,
         }
     },
