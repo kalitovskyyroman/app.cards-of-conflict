@@ -17,8 +17,8 @@ const buttonStyles: OverridesStyleRules = {
         ':hover': {
             backgroundColor: colors['soft-white'],
             boxShadow: `
-                -7px 1px 1px 1px ${colors['chromatic-red']},
-                7px -1px 1px 1px ${colors['chromatic-blue']}
+                -9px 1px 1px 1px ${colors['chromatic-red']},
+                9px -1px 1px 1px ${colors['chromatic-blue']}
             `,
         },
         ':focus': {
