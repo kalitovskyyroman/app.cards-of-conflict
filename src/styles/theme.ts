@@ -2,6 +2,7 @@ import { createTheme } from '@mui/material';
 import { OverridesStyleRules } from '@mui/material/styles/overrides';
 
 import colors from './colors.module.scss';
+import btnStyles from './overrides/button.module.scss';
 
 const buttonStyles: OverridesStyleRules = {
     root: {
@@ -10,31 +11,23 @@ const buttonStyles: OverridesStyleRules = {
         borderRadius: '30px',
         padding: '8px 24px',
         textTransform: 'lowercase',
-        boxShadow: `
-            -5px 1px 1px 1px ${colors['chromatic-red']}, 
-            5px -1px 1px 1px ${colors['chromatic-blue']}
-        `,
+        boxShadow: btnStyles['box-shadow-regular'],
         ':hover': {
             backgroundColor: colors['soft-white'],
-            boxShadow: `
-                -9px 1px 1px 1px ${colors['chromatic-red']},
-                9px -1px 1px 1px ${colors['chromatic-blue']}
-            `,
+            boxShadow: btnStyles['box-shadow-hover'],
         },
         ':focus': {
-            boxShadow: `
-                -9px 1px 1px 1px ${colors['chromatic-red']},
-                9px -1px 1px 1px ${colors['chromatic-blue']}
-            `,
+            boxShadow: btnStyles['box-shadow-focus'],
         },
         ':active': {
             color: colors['soft-white'],
             backgroundColor: colors['soft-black'],
-            boxShadow: `
-                -9px 1px 1px 1px ${colors['chromatic-blue']},
-                9px -1px 1px 1px ${colors['chromatic-red']}
-            `,
-        }
+            boxShadow: btnStyles['box-shadow-active'],
+        },
+        ':disabled': {
+            boxShadow: btnStyles['box-shadow-regular'],
+            opacity: 0.7,
+        },
     },
 };
 

@@ -1,0 +1,19 @@
+.btn {
+    background-color: #ededed;
+    color: #0a1520;
+    border-radius: 30px;
+    padding: 8px 24px;
+    box-shadow: -7px 1px 1px 1px #ea372f, 7px -1px 1px 1px #76fbfd;
+    margin-right: 100px;
+
+    &:hover,
+    &:active {
+        color: #ededed;
+        background-color: #0a1520;
+        box-shadow: -7px 1px 1px 1px #76fbfd, 7px -1px 1px 1px #ea372f;
+    }
+
+    &:focus {
+        box-shadow: -7px 1px 1px 1px #ea372f, 7px -1px 1px 1px #76fbfd;
+    }
+}
