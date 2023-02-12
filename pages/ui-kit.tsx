@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Button } from '@mui/material';
+import { Button, TextField } from '@mui/material';
 
 const UiKit: FC = () => (
     <>
@@ -17,9 +17,12 @@ const UiKit: FC = () => (
             <Button style={{ marginBottom: '30px' }} variant="contained">
                 кнопка
             </Button>
-            <Button variant="contained" disabled>
+            <Button style={{ marginBottom: '30px' }} variant="contained" disabled>
                 кнопка
             </Button>
+            <div style={{ backgroundColor: '#0a1520', padding: '40px' }}>
+                <TextField label="нікнейм" variant="standard" />
+            </div>
         </div>
     </>
 );

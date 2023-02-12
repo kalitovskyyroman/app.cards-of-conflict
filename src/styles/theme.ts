@@ -1,4 +1,4 @@
-import { createTheme } from '@mui/material';
+import { createTheme, formLabelClasses } from '@mui/material';
 import { OverridesStyleRules } from '@mui/material/styles/overrides';
 
 import colors from './colors.module.scss';
@@ -46,6 +46,32 @@ const theme = createTheme({
     components: {
         MuiButton: {
             styleOverrides: buttonStyles,
+        },
+        MuiFormLabel: {
+            styleOverrides: {
+                root: {
+                    color: colors['soft-white'],
+                    [`&.${formLabelClasses.focused}`]: {
+                        color: colors['chromatic-blue'],
+                    },
+                },
+            },
+        },
+        MuiInput: {
+            styleOverrides: {
+                underline: {
+                    color: colors['soft-white'],
+                    '&:after': {
+                        borderColor: colors['chromatic-blue'],
+                    },
+                    '&:before': {
+                        borderColor: colors['soft-white'],
+                    },
+                    '&&:hover:before': {
+                        borderColor: colors['chromatic-blue'],
+                    },
+                },
+            },
         },
     },
 });
