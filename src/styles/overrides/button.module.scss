@@ -1,0 +1,13 @@
+@use '../colors.module';
+
+$box-shadow-regular: -5px 1px 1px 1px colors.$chromatic-red, 5px -1px 1px 1px colors.$chromatic-blue;
+$box-shadow-hover: -9px 1px 1px 1px colors.$chromatic-red, 9px -1px 1px 1px colors.$chromatic-blue;
+$box-shadow-focus: -5px 1px 1px 1px colors.$chromatic-red, 5px -1px 1px 1px colors.$chromatic-blue;
+$box-shadow-active: -9px 1px 1px 1px colors.$chromatic-blue, 9px -1px 1px 1px colors.$chromatic-red;
+
+:export {
+    box-shadow-regular: $box-shadow-regular;
+    box-shadow-hover: $box-shadow-hover;
+    box-shadow-focus: $box-shadow-focus;
+    box-shadow-active: $box-shadow-active;
+}
